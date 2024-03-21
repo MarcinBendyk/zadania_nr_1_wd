@@ -1,4 +1,6 @@
 import random
+import math
+import sys
 from typing import List
 
 #lista = [random.randint(1, 100) for x in range(10)]
@@ -20,7 +22,18 @@ from typing import List
 #def pt(a = 2,b = 4,h = 2):
 #   return ((a+b)*h)/2
 #print (pt())
-def function(a,b,c):
-    lista = [a  b * i for i in range(c)]
-    return lista
-print(function(5,5,5))
+
+#def function(a,b,c):
+#    lista = [a * b * i for i in range(c)]
+#    return lista
+#print(function(5,5,5))
+
+
+liczba = int(input('\n'))
+
+try:
+        sqrt_liczba = math.sqrt(liczba)
+except Exception:
+        print('Liczba ujemna!!!')
+else:
+        print(sqrt_liczba)
